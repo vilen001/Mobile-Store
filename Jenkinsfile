@@ -1,12 +1,10 @@
-Pipeline{
+pipeline{
     agent any
     stages{
-        stage ('Build the project'){
+        stage ('checkout the code from SCM'){
             steps{
-                echo 'Building the mobilestore api'
-                sh 'mvn clean install'
+                echo 'checkout the code'
             }
         }
-
     }
 }
